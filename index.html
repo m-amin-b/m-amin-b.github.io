@@ -1,1 +1,70 @@
-hello world ! <a src="/all">all</a>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-AMIN-B</title>
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+
+<body class="bg-slate-100 dark:bg-[#1c1825]">
+
+    <!-- profile section -->
+    <div
+        class="w-1/2 mx-auto mt-4 flex flex-col items-center justify-between border border-[#e3fca9] rounded-2xl text-white overflow-hidden">
+        <img src="./images/bg-profile.png" alt="" class="w-full h-20 object-cover -z-10">
+
+        <div class="w-full px-10 py-10 flex items-center justify-between">
+            <!-- details profil -->
+            <div class="flex items-center gap-10">
+                <div class="size-40 rounded-full overflow-hidden border-2 border-[#e3fca9] shadow-greenl ">
+                    <img src="./images/avatar.jpg " alt="">
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-4xl">m-amin-b</h1>
+                    <p class="">Front End Developer 👨‍💻💻</p>
+                </div>
+            </div>
+            <!-- followers -->
+            <div class="flex gap-10 mr-10 text-[#e3fca9]">
+                <div class="text-center">
+                    <h4 id="public-repo">0</h4>
+                    <h4>public repository</h4>
+                </div>
+
+                <div class="text-center">
+                    <h4 id="followers">0</h4>
+                    <h4>followers</h4>
+                </div>
+
+                <div class="text-center">
+                    <h4 id="following">0</h4>
+                    <h4>following</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- title -->
+    <h2 class="text-white text-3xl text-center pt-8">My Repositories</h2>
+    <!-- repo wrapper - messeage -->
+    <div class="p-10 grid grid-cols-3 gap-4 justify-center" id="repo-wrapper">
+        <!-- loader - message -->
+        <div class="col-start-2 justify-self-center">
+            <div
+                class="loader size-12 border-r-[5px] border-t-[5px] border-solid border-[#b195fb] rounded-full flex items-center justify-center">
+                <div
+                    class="small-circle size-9 border-l-[5px] border-b-[5px] border-solid border-[#b195fb] rounded-full">
+                </div>
+            </div>
+
+            <h2 class="text-white text-center mt-3">Loading...</h2>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
